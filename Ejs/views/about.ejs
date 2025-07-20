@@ -1,0 +1,7 @@
+<%-include('./product.ejs')%>
+<h1>This is our about page</h1>
+<ul>
+ <% products.forEach((p)=>{%>
+<li> <%=p.label%></li>
+<%})%> 
+</ul>
