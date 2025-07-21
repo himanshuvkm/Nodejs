@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 // ✅ Connect to MongoDB using Mongoose
 mongoose
   .connect(
-    "mongodb+srv://himanshuvkm252:himanshuvkm252@cluster0.00yyznt.mongodb.net/"
+    "mongodb+srv://username:password@cluster0.00yyznt.mongodb.net/"
   )
   .then(() => console.log("database connected successfully"))
   .catch((e) => console.log(e));
