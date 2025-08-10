@@ -1,16 +1,14 @@
 const express = require('express')
+const jwt = require('jsonwebtoken')
 
-
-const isAdminUser = (req,res,next)=>{
-    if(req.userInfo.role !== 'admin'){
+const isAdminUser = (req, res, next) => {
+    if ( req.userInfo.role !== 'admin') {
         return res.status(403).json({
-             success : false,
-             message : "Access denied ! Admin rights required"
-
-        })
+            success: false,
+            message: "Access denied! Admin rights required"
+        });
     }
-    next()
-}
-
+    next();
+};
 
 module.exports = isAdminUser
